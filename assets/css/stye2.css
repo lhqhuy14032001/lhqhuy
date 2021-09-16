@@ -1,0 +1,477 @@
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    html {
+        font-family: Arial, Helvetica, sans-serif;
+        scroll-behavior: smooth;
+    }
+    /* common */
+    
+    .clear {
+        clear: both;
+    }
+    
+    .text-white {
+        color: #fff !important;
+    }
+    
+    .button {
+        font-size: 15px;
+        padding: 10px 16px;
+        background-color: #000;
+        font-size: 15px;
+        color: #fff;
+        border: none;
+        -webkit-appearance: none;
+    }
+    
+    .button:hover {
+        background-color: #ccc;
+        color: #000;
+    }
+    
+    .row {
+        margin: 0 -8px;
+    }
+    
+    .mt-16 {
+        margin-top: 16px !important;
+    }
+    
+    .pad-8 {
+        padding: 0 8px;
+    }
+    
+    .mar-top-8 {
+        margin-top: 8px;
+    }
+    
+    .col {
+        float: left;
+        padding: 0 8px;
+    }
+    
+    .col-2 {
+        width: 50%;
+    }
+    
+    .col-3 {
+        float: left;
+        width: 33.33333%;
+    }
+    
+    .col-ful {
+        width: 100%;
+    }
+    
+    .pull-right {
+        float: right;
+    }
+    /* common */
+    
+    #header {
+        position: fixed;
+        background-color: #000;
+        height: 46px;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+    
+    #nav {
+        display: inline-block;
+    }
+    
+    #nav>li {
+        display: inline-block;
+    }
+    
+    #nav li {
+        position: relative;
+    }
+    
+    #nav>li>a {
+        text-transform: uppercase;
+        color: #fff;
+    }
+    
+    #nav li a {
+        text-decoration: none;
+        line-height: 46px;
+        padding: 0 24px;
+        display: block;
+    }
+    
+    #nav .subnav a:hover,
+    #nav>li:hover>a {
+        color: #000;
+        background-color: #ccc;
+    }
+    
+    #nav .subnav a {
+        color: #000;
+        display: block;
+        padding: 8px 16px;
+        line-height: 28px;
+    }
+    
+    #nav li:hover .subnav {
+        display: block;
+    }
+    
+    #nav .subnav {
+        list-style: none;
+        background-color: #fff;
+        min-width: 170px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+    }
+    
+    #header .search-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+    }
+    
+    #header .menu-btn-mobile {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: none;
+    }
+    
+    #header .menu-btn-mobile,
+    #header .search-btn {
+        float: right;
+        padding: 0 24px;
+    }
+    
+    #header .menu-icon-mobile,
+    #header .search-icon {
+        color: #fff;
+        line-height: 46px;
+    }
+    
+    #header .menu-btn-mobile:hover .menu-icon-mobile {
+        color: #000;
+    }
+    
+    #header .menu-btn-mobile:hover {
+        background-color: #ccc;
+    }
+    
+    #header .search-btn:hover {
+        background-color: red;
+        cursor: pointer;
+    }
+    
+    #slider {
+        background: url(../img/slider/ny.jpg) top center / cover no-repeat;
+        margin-top: 46px;
+        padding-top: 50%;
+        position: relative;
+    }
+    
+    #slider .slider-content {
+        color: #fff;
+        bottom: 0;
+        text-align: center;
+        padding: 32px 16px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+    }
+    
+    #slider .heading-slider-content {
+        font-size: 24px;
+        font-weight: 400;
+        padding-bottom: 10px;
+        text-shadow: 0 0 1px #000;
+    }
+    
+    #slider .desc-slide-content {
+        font-size: 15px;
+        margin: 15px 0;
+        text-shadow: 0 0 1px #000;
+    }
+    
+    #content .content-section {
+        width: 800px;
+        max-width: 100%;
+        padding: 64px 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #content .heading-content {
+        font-size: 30px;
+        margin: 10px 0;
+        text-align: center;
+    }
+    
+    #content .sub-heading-content {
+        font-size: 15px;
+        margin: 15px 0;
+        text-align: center;
+        font-style: italic;
+        color: #ccc;
+    }
+    /* band */
+    
+    .content-section .band-information-content {
+        text-align: justify;
+        font-size: 15px;
+        line-height: 1.4;
+        margin: 15px 0;
+    }
+    
+    .content-section .band-list-img {
+        padding: 32px 0;
+        text-align: center;
+    }
+    
+    .content-section .band-name-member {
+        text-align: center;
+        font-size: 15px;
+        margin: 15px 0;
+    }
+    
+    .band-member-img {
+        border-radius: 4px;
+        width: 154px;
+        margin-bottom: 15px;
+    }
+    /* band */
+    /* tour */
+    
+    .tour-section {
+        background-color: #000;
+    }
+    
+    .tour-section .sold-tickets {
+        background-color: #fff;
+        list-style: none;
+        color: rgba(0, 0, 0, .5);
+    }
+    
+    .tour-section .sold-tickets li {
+        padding: 11px 16px;
+        font-size: 15px;
+        border-bottom: 1px solid #ccc;
+    }
+    
+    .tour-section .sold-out {
+        background-color: red;
+        color: #fff;
+        margin-left: 8px;
+        padding: 2px 8px;
+    }
+    
+    .tour-section .quantity-tickets {
+        float: right;
+        background-color: #000;
+        color: #fff;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 24px;
+    }
+    
+    .place-list-render {}
+    
+    .place-item {
+        padding: 16px 8px;
+    }
+    
+    .place-item-body {
+        padding: 8px;
+        background-color: #fff;
+    }
+    
+    .place-img {
+        width: 100%;
+        display: block;
+    }
+    
+    .place-img:hover {
+        opacity: .5;
+    }
+    
+    .place-desc,
+    .place-location {
+        margin: 15px 0;
+        font-size: 15px;
+    }
+    
+    .place-render-date {
+        color: rgba(0, 0, 0, .5);
+        margin: 15px 0;
+        font-size: 15px;
+    }
+    
+    .place-render-date {}
+    
+    .place-desc {}
+    /* tour */
+    
+    .contact-form .form-control {
+        padding: 8px;
+        width: 100%;
+        margin-top: 8px;
+    }
+    
+    .contact-if {
+        font-size: 18px;
+        line-height: 1.8;
+        margin-top: 8px;
+    }
+    
+    .contact-if a {
+        color: #000;
+        text-decoration: none;
+        opacity: 0.6;
+    }
+    
+    .contact-if a:hover {
+        opacity: 1;
+    }
+    
+    .contact-icon {
+        padding: 8px;
+    }
+    
+    .map-img {
+        margin-top: 96px;
+        width: 100%;
+        filter: grayscale(50%);
+    }
+    
+    #footer {
+        padding: 64px 16px;
+        text-align: center;
+    }
+    
+    .social-icon a {
+        font-size: 24px;
+        color: rgba(0, 0, 0, .5);
+        text-decoration: none;
+    }
+    
+    .coppy-right a,
+    .coppy-right {
+        margin: 15px 0;
+        font-size: 15px;
+        color: rgba(0, 0, 0, .5);
+    }
+    /* modal */
+    
+    .modal-section {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, .5);
+        align-items: center;
+        justify-content: center;
+        display: none;
+        animation: modal-fade-in ease .8s;
+    }
+    
+    .open-modal-buy {
+        display: flex;
+    }
+    
+    .modal-container {
+        width: 900px;
+        background-color: #fff;
+        min-height: 200px;
+        display: relative;
+    }
+    
+    .modal-close-icon {
+        display: absolute;
+        float: right;
+        padding: 12px;
+        color: #fff;
+    }
+    
+    .modal-head-content {
+        padding: 42px 16px;
+        background-color: #009688;
+        font-size: 30px;
+        color: #fff;
+        text-align: center;
+    }
+    
+    .modal-bag {
+        margin-right: 12px;
+    }
+    
+    .modal-body {
+        padding: 16px;
+    }
+    
+    .modal-label {
+        display: block;
+        width: 100%;
+        font-size: 15px;
+        padding: 24px 0 12px 0;
+    }
+    
+    .modal-ip {
+        width: 100%;
+        padding: 8px;
+        font-size: 15px;
+    }
+    
+    .modal-btn {
+        width: 100%;
+        margin: 10px 0;
+        padding: 16px;
+        background-color: #009688;
+        border: none;
+        color: #fff;
+        font-size: 15px;
+    }
+    
+    .modal-footer {
+        margin-right: 16px;
+        margin-bottom: 24px;
+        float: right;
+    }
+    
+    .modal-footer a {
+        color: #2196F3;
+    }
+    
+    .modal-close-icon:hover {
+        background-color: red;
+        cursor: pointer;
+    }
+    
+    .modal-btn:hover {
+        background-color: #ccc;
+        color: #000;
+        cursor: pointer;
+    }
+    
+    @keyframes modal-fade-in {
+        from {
+            opacity: .4;
+            transform: translateY(100px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }

@@ -1,0 +1,97 @@
+/*
+Đối với media query sử dụng đơn vị em
+PC: >= 64em (1024px)
+Tablet: >=46.25em (740px) và < 64em (1024px)
+mobile: <46.25em (740px) 
+ */
+
+
+/* tablet & mobile */
+
+@media (max-width: 63.9375em) {
+    #nav .subnav a {
+        padding: 10px 12px;
+    }
+    .button {
+        padding: 15px 16px;
+    }
+    .contact-form .form-control {
+        padding: 15px;
+    }
+    .contact-if {
+        line-height: 2;
+    }
+    .social-icon {
+        font-size: 48px;
+    }
+    .social-icon a {
+        margin-left: 0 8px;
+    }
+    .coppy-right a {
+        padding: 12px 0;
+        display: inline-block;
+    }
+}
+
+
+/* tablet */
+
+@media (min-width:46.25em) and (max-width:63.9375em) {
+    .contact-if {
+        line-height: 2;
+    }
+}
+
+
+/* tablet */
+
+
+/* mobile */
+
+@media ( max-width: 46.13475em) {
+    .s-full-width {
+        width: 100%;
+    }
+    .s-col-full {
+        width: 100%;
+    }
+    #header {
+        overflow: hidden;
+    }
+    #nav {
+        display: block;
+    }
+    #nav li a {
+        padding: 1px 24px;
+    }
+    #nav .subnav {
+        position: initial;
+        background: #333;
+    }
+    #nav .subnav a {
+        color: #fff;
+        padding: 5px 41px;
+    }
+    #nav>li {
+        display: block;
+    }
+    #nav>li:first-child {
+        display: inline-block;
+    }
+    #header .search-icon {
+        display: none;
+    }
+    #header .menu-btn-mobile {
+        display: block;
+    }
+    .content-section .band-member-img {
+        width: 60%;
+    }
+    .contact-form .form-control {
+        margin-top: 32px;
+        font-size: 16px;
+    }
+    #slider .desc-slide-content {
+        font-size: 14px;
+    }
+}
